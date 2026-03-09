@@ -1,0 +1,36 @@
+
+================================================================================
+AI6103 HYPERPARAMETER STUDY - FULL EXPERIMENT RUN
+Device: cuda
+Output Directory: /mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/outputs
+================================================================================
+
+============================================================
+SECTION 2: DATA PREPROCESSING
+============================================================
+Computing dataset statistics...
+Traceback (most recent call last):
+  File "/mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/run_all.py", line 180, in <module>
+    main()
+  File "/mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/run_all.py", line 164, in main
+    run_all_experiments()
+  File "/mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/experiments.py", line 372, in run_all_experiments
+    mean, std = run_section2()
+                ^^^^^^^^^^^^^^
+  File "/mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/experiments.py", line 26, in run_section2
+    mean, std = compute_dataset_stats(train_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/data.py", line 73, in compute_dataset_stats
+    dataset = datasets.ImageFolder(data_path, transform=transform)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/szchen/miniconda3/envs/playground/lib/python3.12/site-packages/torchvision/datasets/folder.py", line 328, in __init__
+    super().__init__(
+  File "/mnt/disk1/szchen/miniconda3/envs/playground/lib/python3.12/site-packages/torchvision/datasets/folder.py", line 149, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/szchen/miniconda3/envs/playground/lib/python3.12/site-packages/torchvision/datasets/folder.py", line 234, in find_classes
+    return find_classes(directory)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/disk1/szchen/miniconda3/envs/playground/lib/python3.12/site-packages/torchvision/datasets/folder.py", line 43, in find_classes
+    raise FileNotFoundError(f"Couldn't find any class folder in {directory}.")
+FileNotFoundError: Couldn't find any class folder in /mnt/disk1/szchen/PlayGround/repo/ai6103-hyperparameter-study/data/training.

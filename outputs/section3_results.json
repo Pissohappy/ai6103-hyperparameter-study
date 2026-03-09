@@ -1,0 +1,26 @@
+{
+  "lr_0.1": {
+    "final_train_loss": 1.6086784433095882,
+    "final_train_acc": 44.62801540644638,
+    "final_val_loss": 1.8928943739997015,
+    "final_val_acc": 37.87172011661808,
+    "best_val_acc": 40.61224489795919,
+    "best_val_loss": 1.6814455412052296
+  },
+  "lr_0.025": {
+    "final_train_loss": 1.1744602979757848,
+    "final_train_acc": 59.720251368335695,
+    "final_val_loss": 1.3705848764490198,
+    "final_val_acc": 54.606413994169095,
+    "best_val_acc": 56.034985422740526,
+    "best_val_loss": 1.279212525597325
+  },
+  "lr_0.001": {
+    "final_train_loss": 1.664592758203164,
+    "final_train_acc": 41.98256638962092,
+    "final_val_loss": 1.602624049893132,
+    "final_val_acc": 43.76093294460642,
+    "best_val_acc": 43.76093294460642,
+    "best_val_loss": 1.602624049893132
+  }
+}
